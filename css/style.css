@@ -1,0 +1,27 @@
+.sliver-div {
+    border: 5px solid blue;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.p5 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    align-items: center;
+    position: relative;
+}
+
