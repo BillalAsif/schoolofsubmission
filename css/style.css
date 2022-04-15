@@ -1,6 +1,12 @@
+.pt-5 {
+    padding-top: 5px;
+}
+
 .bjj-nav {
     background-color: white;
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .bjj-nav-items {
@@ -35,15 +41,16 @@
     top: 37px;
     font-family: fantasy;
     font-style: italic;
-    padding-right: 10px;
 }
 
 .r-text{
     display: inline;
+    font-size: 30px;
 }
 
 .belt{
-    width: 115px;
+    width: 100px;
     display: inline;
-    margin-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 5px;
 }
