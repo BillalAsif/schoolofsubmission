@@ -1,56 +1,88 @@
-.pt-5 {
-    padding-top: 5px;
-}
-
 .bjj-nav {
-    background-color: white;
-    position: relative;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.bjj-nav-items {
-    list-style: none;
-    display: flex;
-    position: relative;
-    align-items: center;
+.mt-80 {
+    margin-top: 80px;
 }
 
 .bjj-nav-links {
-    color: darkred;
+    color: white;
     font-weight: bold;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    font-size: 30px;
+    display: inline;
 }
 
-.bjj-logo{
-    width: 100px;
+.bjj-nav-links:hover {
+    border-top: 5px solid red;
+    cursor: pointer;
+}
+
+.bjj-logo {
+    width: 200px;
     padding-top: 14px;
 }
 
-.bjj-p5 {
-    padding-left: 10px;
-    padding-right: 10px;
+.bjj-nav-ul {
+    display: inline;
+    position: relative;
 }
 
 .bjj-slider {
     width: 100%;
 }
 
-.bjj-respect{
-    position: absolute;
-    right: 30px;
-    top: 37px;
-    font-family: fantasy;
+.r-text {
+    font-size: 35px;
+    font-weight: bold;
     font-style: italic;
+    color: white;
+    text-align: center;
+
 }
 
-.r-text{
-    display: inline;
-    font-size: 30px;
+.flip {
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 
-.belt{
-    width: 100px;
-    display: inline;
+.quote {
+    font-size: 40px;
+    color: red;
+}
+
+.mt-r-text {
+    margin-top: 45px;
+}
+
+.mt-belt {
+    margin-top: 65px;
+}
+
+.belt {
+    width: 200px;
     padding-left: 20px;
-    padding-top: 5px;
+    display: inline;
+}
+
+.slider-bg {
+    background-image: url(../images/slider1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
