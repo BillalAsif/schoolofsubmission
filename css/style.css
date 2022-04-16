@@ -3,32 +3,20 @@
     padding-right: 20px;
 }
 
-.mt-nav {
-    margin-top: 80px;
-}
-
-.bjj-nav-links {
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    margin: 0px 10px 0px 10px;
-    font-size: 30px;
-    display: inline;
-}
-
-.bjj-nav-links:hover {
-    border-top: 5px solid red;
-    cursor: pointer;
-}
-
 .bjj-logo {
     width: 200px;
     padding-top: 14px;
+    padding-left: 10px;
 }
 
-.bjj-nav-ul {
-    display: inline;
-    position: relative;
+.bjj-wrapper {
+    background-color: white;
+}
+
+.bjj-wrapper > ul > li > a {
+    color: red;
+    font-weight: bold;
+    font-family:sans-serif;
 }
 
 .bjj-slider {
@@ -56,118 +44,10 @@
     color: red;
 }
 
-.mt-r-text {
-    margin-top: 45px;
-}
-
-.mt-belt {
-    margin-top: 65px;
-}
-
-.belt {
-    width: 200px;
-    padding-left: 20px;
-    display: inline;
-}
-
-.slider-bg {
-    background-image: url(../images/slider1.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-}
-
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-@media only screen and (max-width: 1300px) {
-
-    .mt-nav {
-        margin-top: 35px;
-    }
+@media screen and (min-width:991px) {
 
     .bjj-logo {
         width: 100px;
-    }
-
-    .r-text {
-        font-size: 20px;
-    }
-    
-    .quote {
-        font-size: 20px;
-        color: red;
-    }
-    
-    .mt-r-text {
-        margin-top: 20px;
-    }
-    
-    .mt-belt {
-        margin-top: 30px;
-    }
-    
-    .belt {
-        width: 100px;
-        padding-left: 20px;
-        display: inline;
-        margin-top:20px;
-    }
-
-    .bjj-nav-links {
-        font-size: 15px;
-    }
-
-}
-
-@media screen and (max-width: 1120px) {
-
-    .mt-nav {
-        margin-top: 35px;
-    }
-
-    .bjj-logo {
-        width: 100px;
-    }
-
-    .r-text {
-        font-size: 15px;
-    }
-    
-    .quote {
-        font-size: 15px;
-        color: red;
-    }
-    
-    .mt-r-text {
-        margin-top: 20px;
-    }
-    
-    .mt-belt {
-        margin-top: 30px;
-    }
-    
-    .belt {
-        padding-left: 20px;
-        margin-top:15px;
-    }
-
-    .bjj-nav-links {
-        font-size: 13px;
-    }
-
-}
-
-@media screen and (max-width:991px){
-
-    #nav-links{
     }
     
 }
