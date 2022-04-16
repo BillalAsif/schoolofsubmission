@@ -3,7 +3,7 @@
     padding-right: 20px;
 }
 
-.mt-80 {
+.mt-nav {
     margin-top: 80px;
 }
 
@@ -85,4 +85,89 @@ video {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .mt-nav {
+        margin-top: 35px;
+    }
+
+    .bjj-logo {
+        width: 100px;
+    }
+
+    .r-text {
+        font-size: 20px;
+    }
+    
+    .quote {
+        font-size: 20px;
+        color: red;
+    }
+    
+    .mt-r-text {
+        margin-top: 20px;
+    }
+    
+    .mt-belt {
+        margin-top: 30px;
+    }
+    
+    .belt {
+        width: 100px;
+        padding-left: 20px;
+        display: inline;
+        margin-top:20px;
+    }
+
+    .bjj-nav-links {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .mt-nav {
+        margin-top: 35px;
+    }
+
+    .bjj-logo {
+        width: 100px;
+    }
+
+    .r-text {
+        font-size: 15px;
+    }
+    
+    .quote {
+        font-size: 15px;
+        color: red;
+    }
+    
+    .mt-r-text {
+        margin-top: 20px;
+    }
+    
+    .mt-belt {
+        margin-top: 30px;
+    }
+    
+    .belt {
+        padding-left: 20px;
+        margin-top:15px;
+    }
+
+    .bjj-nav-links {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:991px){
+
+    #nav-links{
+    }
+    
 }
