@@ -68,12 +68,20 @@
 
 @media screen and (max-width:991px) {
     
-    .respect-text > span {
+    .respect-text > span, .respect-text > span > i {
         font-size: 15px;
     }
 
     .bjj-logo {
         width: 150px;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    
+    .respect-text > span, .respect-text > span > i {
+        font-size: 10px;
     }
     
 }
