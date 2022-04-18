@@ -16,12 +16,30 @@ html {
     width: 100px;
     padding-top: 14px;
     padding-left: 10px;
+    animation-name: disolveEffect;
+    animation-duration: 2s;
+    opacity: 1;
 }
+
+.disolve{
+    animation-name: disolveEffect;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+@keyframes disolveEffect {
+    0% {opacity: 0.1};
+    100% {opacity: 1;}
+}
+
 
 .bjj-wrapper > ul > li > a {
     color: white;
     font-weight: bold;
     font-family:sans-serif;
+    animation-name: disolveEffect;
+    animation-duration: 2s;
+    opacity: 1;
 }
 
 .bjj-wrapper > ul > li > a:hover {
@@ -61,13 +79,20 @@ html {
     color: white;
     opacity: 0.8;
     position: absolute;
-    top: 200px;
-    left: 20px;
+    top: 200px; left: 20px;
     padding: 20px 20px 25px 20px;
+    animation-name: moveQuoteDiv;
+    animation-duration: 2s;
 }
 
 .quote-div > span {
     font-size: 30px;
+}
+
+@keyframes moveQuoteDiv {
+    0% {top: 200px;left: -2000px;}
+    100% {top: 200px; left: 20px;}
+
 }
 
 .bjj-sidenav {
