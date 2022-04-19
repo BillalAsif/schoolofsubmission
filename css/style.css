@@ -15,9 +15,9 @@ html {
     padding-right: 20px;
     background: transparent;
     position: absolute;
-    top:0px;
+    top: 0px;
     box-shadow: none;
-    -webkit-box-shadow:none;
+    -webkit-box-shadow: none;
 }
 
 .bjj-logo {
@@ -29,28 +29,35 @@ html {
     opacity: 1;
 }
 
-.disolve{
+.disolve {
     animation-name: disolveEffect;
     animation-duration: 3s;
     opacity: 1;
 }
 
 @keyframes disolveEffect {
-    0% {opacity: 0.1};
-    100% {opacity: 1;}
+    0% {
+        opacity: 0.1
+    }
+
+    ;
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
-.bjj-wrapper > ul > li > a {
+.bjj-wrapper>ul>li>a {
     color: white;
     font-weight: bold;
-    font-family:sans-serif;
+    font-family: sans-serif;
     animation-name: disolveEffect;
     animation-duration: 3s;
     opacity: 1;
 }
 
-.bjj-wrapper > ul > li > a:hover {
+.bjj-wrapper>ul>li>a:hover {
     border-top: 5px solid red;
 }
 
@@ -77,7 +84,7 @@ html {
     padding-right: 5px;
 }
 
-.quote > i{
+.quote>i {
     color: red;
     font-size: 30px;
 }
@@ -87,19 +94,27 @@ html {
     color: white;
     opacity: 0.8;
     position: absolute;
-    top: 200px; left: 20px;
+    top: 200px;
+    left: 20px;
     padding: 20px 20px 25px 20px;
     animation-name: moveQuoteDiv;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
-.quote-div > span {
+.quote-div>span {
     font-size: 30px;
 }
 
 @keyframes moveQuoteDiv {
-    0% {top: 200px;left: -2000px;}
-    100% {top: 200px; left: 20px;}
+    0% {
+        top: 200px;
+        left: -2000px;
+    }
+
+    100% {
+        top: 200px;
+        left: 20px;
+    }
 
 }
 
@@ -110,7 +125,7 @@ html {
     display: grid;
 }
 
-.bjj-sidenav > li > a {
+.bjj-sidenav>li>a {
     text-align: center;
     color: white;
 }
@@ -121,7 +136,7 @@ html {
     right: 15px;
 }
 
-.line-height > i {
+.line-height>i {
     line-height: 38px;
 }
 
@@ -130,12 +145,10 @@ html {
 }
 
 .classes-col-text {
-    padding:20px;
-    background-color: aliceblue;
-    height: 449.08px;
+    padding: 20px;
 }
 
-.classes-picone {
+.width-100 {
     width: 100%;
 }
 
@@ -144,8 +157,9 @@ html {
 }
 
 @media screen and (max-width:991px) {
-    
-    .quote-div > span, .quote-div > span > i {
+
+    .quote-div>span,
+    .quote-div>span>i {
         font-size: 15px;
     }
 
@@ -156,8 +170,9 @@ html {
 }
 
 @media screen and (max-width:600px) {
-    
-    .quote-div > span, .quote-div > span > i {
+
+    .quote-div>span,
+    .quote-div>span>i {
         font-size: 15px;
     }
 
