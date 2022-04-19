@@ -2,6 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.centre {
+    text-align: center;
+}
+
 .bjj-nav {
     padding-left: 20px;
     padding-right: 20px;
@@ -115,6 +123,24 @@ html {
 
 .line-height > i {
     line-height: 38px;
+}
+
+.bjj-footer {
+    background-color: red;
+}
+
+.classes-col-text {
+    padding:20px;
+    background-color: aliceblue;
+    height: 449.08px;
+}
+
+.classes-picone {
+    width: 100%;
+}
+
+#date {
+    font-style: normal;
 }
 
 @media screen and (max-width:991px) {
