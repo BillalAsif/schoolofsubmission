@@ -17,13 +17,13 @@ html {
     padding-top: 14px;
     padding-left: 10px;
     animation-name: disolveEffect;
-    animation-duration: 2s;
+    animation-duration: 3s;
     opacity: 1;
 }
 
 .disolve{
     animation-name: disolveEffect;
-    animation-duration: 2s;
+    animation-duration: 3s;
     opacity: 1;
 }
 
@@ -38,7 +38,7 @@ html {
     font-weight: bold;
     font-family:sans-serif;
     animation-name: disolveEffect;
-    animation-duration: 2s;
+    animation-duration: 3s;
     opacity: 1;
 }
 
@@ -82,7 +82,7 @@ html {
     top: 200px; left: 20px;
     padding: 20px 20px 25px 20px;
     animation-name: moveQuoteDiv;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 .quote-div > span {
