@@ -1,3 +1,14 @@
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+
+window.initMap = initMap;
+
 document.addEventListener('DOMContentLoaded', function() {
     let elems = document.querySelectorAll('.fixed-action-btn');
     let instances = M.FloatingActionButton.init(elems, {
@@ -18,3 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let date = new Date();
   document.getElementById('date').textContent = "@ " +  date.getFullYear()  +" School Of Submission"
+

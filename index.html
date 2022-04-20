@@ -17,6 +17,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
+  <!--Map-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
   <title>BJJ</title>
 </head>
 
@@ -86,7 +89,9 @@
           <img class="width-100" src="images/bg1.jpg" alt="bg">
           <div class="classes-text">
             <h3>Mixed Martial arts</h3>
-            <p>Learn to combine punching kicking and grappling and how to defend yourself on the ground in the BJJ focused MMA class. You will learn how to combine all three elements of a fight and which techniques to use to defend yourself in a cage or in a real world scenario. Also it's really fun.</p>
+            <p>Learn to combine punching kicking and grappling and how to defend yourself on the ground in the BJJ
+              focused MMA class. You will learn how to combine all three elements of a fight and which techniques to use
+              to defend yourself in a cage or in a real world scenario. Also it's really fun.</p>
           </div>
         </div>
 
@@ -131,7 +136,7 @@
 
     </section>
 
-    <section">
+    <section>
 
       <div class="section white">
 
@@ -152,7 +157,7 @@
                 <div class="input-field col s6">
                   <i class="material-icons prefix">account_circle</i>
                   <input id="lastname" type="text" class="validate">
-                  <label for="lastname">Telephone</label>
+                  <label for="lastname">Last Name</label>
                 </div>
               </div>
 
@@ -191,43 +196,46 @@
 
           </div>
 
+          <div class="row">
+            <div id="map"></div>
+          </div>
+
         </div>
 
       </div>
 
       </section>
 
-      <section>
-        <footer class="page-footer bjj-footer">
+      <footer class="page-footer bjj-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Disclaimer</h5>
+              <p class="grey-text text-lighten-4">We take all precautions for your safety. That being said, BJJ is a
+                full contact sport and injuries can occur. Please pay close attention to your instructor to aviod
+                unnecessary harm.
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text"> Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Shop</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Affiliate</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
           <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Disclaimer</h5>
-                <p class="grey-text text-lighten-4">We take all precautions for your safety. That being said, BJJ is a
-                  full contact sport and injuries can occur. Please pay close attention to your instructor to aviod
-                  unnecessary harm.
-                </p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text"> Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Shop</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Affiliate</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Legal</a></li>
-                </ul>
-              </div>
-            </div>
+            <i id="date"></i>
           </div>
-          <div class="footer-copyright">
-            <div class="container">
-              <i id="date"></i>
-            </div>
-          </div>
-        </footer>
-      </section>
+        </div>
+      </footer>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
       <script src="js/script.js"></script>
 </body>
 
