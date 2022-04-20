@@ -156,6 +156,13 @@ html {
     font-style: normal;
 }
 
+.about-header {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    padding: 20px;
+}
+
 @media screen and (max-width:991px) {
 
     .quote-div>span,
