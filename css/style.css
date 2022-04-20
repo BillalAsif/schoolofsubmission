@@ -168,6 +168,10 @@ html {
     position: relative;
 }
 
+.classes-text {
+    text-align: center;
+}
+
 @media screen and (max-width:991px) {
 
     .quote-div>span,
