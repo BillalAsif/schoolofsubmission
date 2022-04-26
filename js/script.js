@@ -1,3 +1,8 @@
+window.onload = setClassesBgHeightWidth();
+window.addEventListener('resize', () => {  
+  setClassesBgHeightWidth(); 
+});
+
 let map;
 
 function initMap() {
@@ -9,24 +14,32 @@ function initMap() {
 
 window.initMap = initMap;
 
-document.addEventListener('DOMContentLoaded', function() {
-    let elems = document.querySelectorAll('.fixed-action-btn');
-    let instances = M.FloatingActionButton.init(elems, {
-      direction: 'top',
-      hoverEnabled: false
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  let elems = document.querySelectorAll('.fixed-action-btn');
+  let instances = M.FloatingActionButton.init(elems, {
+    direction: 'top',
+    hoverEnabled: false
   });
+});
 
-  document.addEventListener('DOMContentLoaded', function() {
-    let elems = document.querySelectorAll('.sidenav');
-    let instances = M.Sidenav.init(elems, 'left');   
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  let elems = document.querySelectorAll('.sidenav');
+  let instances = M.Sidenav.init(elems, 'left');
+});
 
-  document.addEventListener('DOMContentLoaded', function() {
-    let elems = document.querySelectorAll('.parallax');
-    let instances = M.Parallax.init(elems, '991');
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  let elems = document.querySelectorAll('.parallax');
+  let instances = M.Parallax.init(elems, '991');
+});
 
-  let date = new Date();
-  document.getElementById('date').textContent = "@ " +  date.getFullYear()  +" School Of Submission"
+let date = new Date();
+document.getElementById('date').textContent = "@ " + date.getFullYear() + " School Of Submission"
 
+function setClassesBgHeightWidth() {
+
+  let classesImgOne = document.getElementById("classesImgOne");
+  let claasesTextDivOne = document.getElementById("classesTextDivOne");
+
+  claasesTextDivOne.style.height = classesImgOne.clientHeight;
+
+}

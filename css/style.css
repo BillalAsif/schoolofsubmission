@@ -176,6 +176,10 @@ html {
     height: 100%;
 }
 
+#classesTextDivOne{
+    background-color: aqua;
+}
+
 @media screen and (max-width:991px) {
 
     .quote-div>span,
