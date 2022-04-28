@@ -1,8 +1,3 @@
-window.onload = setClassesBgHeightWidth();
-window.addEventListener('resize', () => {  
-  setClassesBgHeightWidth(); 
-});
-
 let map;
 
 function initMap() {
@@ -34,12 +29,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let date = new Date();
 document.getElementById('date').textContent = "@ " + date.getFullYear() + " School Of Submission"
-
-function setClassesBgHeightWidth() {
-
-  let classesImgOne = document.getElementById("classesImgOne");
-  let claasesTextDivOne = document.getElementById("classesTextDivOne");
-
-  claasesTextDivOne.style.height = classesImgOne.clientHeight;
-
-}
