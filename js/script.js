@@ -29,3 +29,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let date = new Date();
 document.getElementById('date').textContent = "@ " + date.getFullYear() + " School Of Submission"
+

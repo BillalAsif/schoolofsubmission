@@ -176,8 +176,17 @@ html {
     height: 100%;
 }
 
-#classesTextDivOne{
+#classesTextDivOne {
     background-color: aqua;
+}
+
+.bjj-map-container {
+    padding-bottom: 20px;
+}
+
+.bjj-map {
+    width: 100%;
+    height: 500px;
 }
 
 @media screen and (max-width:991px) {
