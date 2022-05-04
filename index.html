@@ -17,15 +17,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-  <!--Map-->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
   <title>BJJ</title>
 </head>
 
 <body>
 
-  <section>
+  <!-- Home Section -->
+
+  <section id="homeSection">
 
     <div class="parallax-container bjj-parallex">
       <div class="parallax"><img src="images/slider1.jpg"></div>
@@ -35,18 +34,22 @@
         <span class="author">Hélio Gracie</span>
       </div>
 
+      <!-- nav links -->
+
       <nav class="bjj-nav">
         <div class="nav-wrapper bjj-wrapper">
           <a href="#" class="brand-logo"><img class="bjj-logo" src="images/logo.png" alt="logo"></a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Classes</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a id="homeButton">Home</a></li>
+            <li><a id="classesButton">Classes</a></li>
+            <li><a id="aboutButton">About</a></li>
+            <li><a id="contactButton">Contact</a></li>
           </ul>
         </div>
       </nav>
+
+      <!-- mobile side nav links -->
 
       <ul class="sidenav bjj-sidenav" id="mobile-demo">
         <li><a href="#">Home</a></li>
@@ -71,9 +74,13 @@
         </ul>
       </div>
 
+      <button id="scrollButton">Top</button>
+
   </section>
 
-  <section">
+  <!-- classes Section -->
+
+  <section id="classesSection">
 
     <div class="section white">
 
@@ -118,25 +125,28 @@
 
     </div>
 
-    </section>
+  </section>
 
-    <section>
+  <!-- about Section -->
 
-      <div class="parallax-container bjj-parallex">
-        <div class="parallax"><img src="images/slider2.jpg"></div>
-        <h2 class="font-poppins centre about-header">About</h2>
+  <section id="aboutSection">
 
-      </div>
+    <div class="parallax-container bjj-parallex">
+      <div class="parallax"><img src="images/slider2.jpg"></div>
+      <h2 class="font-poppins centre about-header">About</h2>
 
-    </section>
+    </div>
 
-    <section>
+  </section>
 
-      <div class="section white">
+  <!-- Contact Section -->
+  <section id="contactSection">
 
-        <div class="row container">
+    <div class="section white">
 
-          <h2 class="font-poppins centre">Contact</h2>
+      <div class="row container">
+
+        <h2 class="font-poppins centre">Contact</h2>
 
           <div class="bjj-map-container">
             <iframe class="bjj-map"
@@ -145,101 +155,104 @@
 
           </div>
 
-          <div class="row">
-
-            <form class="col s12" action="https://formspree.io/f/moqrpkzj" method="POST">
-
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="firstname" type="text" class="validate" name="Firstname">
-                  <label for="firstname">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="lastname" type="text" class="validate" name="Lastname">
-                  <label for="lastname">Last Name</label>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">smartphone</i>
-                  <input id="number" type="number" class="validate" name="Number">
-                  <label for="number">Mobile</label>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">email</i>
-                  <input id="email" type="email" class="validate" name="Email">
-                  <label for="email">Email</label>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="message" class="materialize-textarea" name="Message"></textarea>
-                  <label for="message">Message</label>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s12">
-                    <button class="btn waves-effect waves-light red float-right" type="submit">Submit
-                      <i class="material-icons right">send</i>
-                    </button>
-                  </div>
-                </div>
-
-            </form>
-
-          </div>
-
-          <div class="row">
-            <div id="map"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <footer class="page-footer bjj-footer">
-      <div class="container">
         <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Disclaimer</h5>
-            <p class="grey-text text-lighten-4">We take all precautions for your safety. That being said, BJJ is a
-              full contact sport and injuries can occur. Please pay close attention to your instructor to aviod
-              unnecessary harm.
-            </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text"> Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Shop</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Affiliate</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Legal</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          <i id="date"></i>
-        </div>
-      </div>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer></script>
-    <script src="js/script.js"></script>
+          <form class="col s12" action="https://formspree.io/f/moqrpkzj" method="POST">
+
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="firstname" type="text" class="validate" name="Firstname">
+                <label for="firstname">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="lastname" type="text" class="validate" name="Lastname">
+                <label for="lastname">Last Name</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">smartphone</i>
+                <input id="number" type="number" class="validate" name="Number">
+                <label for="number">Mobile</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate" name="Email">
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="message" class="materialize-textarea" name="Message"></textarea>
+                <label for="message">Message</label>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn waves-effect waves-light red float-right" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+
+          </form>
+
+        </div>
+
+        <!-- google maps -->
+        <div class="row">
+          <div id="map"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Fotter Section -->
+
+  <footer class="page-footer bjj-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Disclaimer</h5>
+          <p class="grey-text text-lighten-4">We take all precautions for your safety. That being said, BJJ is a
+            full contact sport and injuries can occur. Please pay close attention to your instructor to aviod
+            unnecessary harm.
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text"> Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Shop</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Affiliate</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <i id="date"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

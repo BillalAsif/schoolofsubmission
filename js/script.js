@@ -30,3 +30,44 @@ document.addEventListener('DOMContentLoaded', function () {
 let date = new Date();
 document.getElementById('date').textContent = "@ " + date.getFullYear() + " School Of Submission"
 
+
+
+//hyperlink scroll events
+let homeButton = document.getElementById("homeButton");
+let homeSection = document.getElementById("homeSection");
+let classesButton = document.getElementById("classesButton");
+let classesSection = document.getElementById("classesSection");
+let aboutButton = document.getElementById("aboutButton");
+let aboutSection = document.getElementById("aboutSection");
+let contactButton = document.getElementById("contactButton");
+let contactSection = document.getElementById("contactSection");
+
+homeButton.addEventListener("click", () => {
+  homeSection.scrollIntoView();
+})
+classesButton.addEventListener("click", () => {
+  classesSection.scrollIntoView();
+})
+aboutButton.addEventListener("click", () => {
+  aboutSection.scrollIntoView();
+})
+contactButton.addEventListener("click", () => {
+  contactSection.scrollIntoView();
+})
+
+//Scroll up button
+let scrollButton = document.getElementById("scrollButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", () => {
+  homeSection.scrollIntoView();
+})
