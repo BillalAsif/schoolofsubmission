@@ -204,7 +204,15 @@ html {
     padding: 15px;
     border-radius: 4px;
     box-shadow: 1px 1px darkred;
-  }
+}
+
+.displayOnBigScreen {
+    display: block;
+}
+
+.displayOnSmallScreen {
+    display: none;
+}
 
 @media screen and (max-width:991px) {
 
@@ -229,6 +237,14 @@ html {
     .quote-div {
         width: 100%;
         left: 0px;
+    }
+
+    .displayOnBigScreen {
+        display: none;
+    }
+
+    .displayOnSmallScreen {
+        display: block;
     }
 
 }

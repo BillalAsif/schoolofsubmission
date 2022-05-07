@@ -98,7 +98,7 @@
 
       </div>
 
-      <div class="row container">
+      <div class="row container displayOnBigScreen">
 
         <div class="col s12 m6 l6 classes-col-text">
           <img class="width-100" src="images/bg2.png" alt="bg">
@@ -106,6 +106,18 @@
 
         <div class="col s12 m6 l6">
           <img class="width-100" src="images/classes2.jpg" alt="classes">
+        </div>
+
+      </div>
+
+      <div class="row container displayOnSmallScreen">
+
+        <div class="col s12 m6 l6">
+          <img class="width-100" src="images/classes2.jpg" alt="classes">
+        </div>
+
+        <div class="col s12 m6 l6 classes-col-text">
+          <img class="width-100" src="images/bg2.png" alt="bg">
         </div>
 
       </div>
@@ -148,69 +160,67 @@
 
         <h2 class="font-poppins centre">Contact</h2>
 
-          <div class="bjj-map-container">
-            <iframe class="bjj-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.5878430729467!2d-0.29730748407410673!3d51.53911901620414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487612238fe18a1d%3A0x4f586a6732c42a6!2sMarkaz%20Us-Sunnah!5e0!3m2!1sen!2suk!4v1651613306106!5m2!1sen!2suk"
-              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Google maps -->
+        <div class="bjj-map-container">
+          <iframe class="bjj-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.5878430729467!2d-0.29730748407410673!3d51.53911901620414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487612238fe18a1d%3A0x4f586a6732c42a6!2sMarkaz%20Us-Sunnah!5e0!3m2!1sen!2suk!4v1651613306106!5m2!1sen!2suk"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        </div>
+
+        <h5>Send us a message to register for a free introduction class.</h5>
+
+      </div>
+
+      <div class="container row">
+
+        <form class="col s12" action="https://formspree.io/f/moqrpkzj" method="POST">
+
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="firstname" type="text" class="validate" name="Firstname">
+              <label for="firstname">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="lastname" type="text" class="validate" name="Lastname">
+              <label for="lastname">Last Name</label>
+            </div>
           </div>
 
-        <div class="row">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">smartphone</i>
+              <input id="number" type="number" class="validate" name="Number">
+              <label for="number">Mobile</label>
+            </div>
+          </div>
 
-          <form class="col s12" action="https://formspree.io/f/moqrpkzj" method="POST">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" name="Email">
+              <label for="email">Email</label>
+            </div>
+          </div>
 
-            <div class="row">
-              <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="firstname" type="text" class="validate" name="Firstname">
-                <label for="firstname">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="lastname" type="text" class="validate" name="Lastname">
-                <label for="lastname">Last Name</label>
-              </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="message" class="materialize-textarea" name="Message"></textarea>
+              <label for="message">Message</label>
             </div>
 
             <div class="row">
               <div class="input-field col s12">
-                <i class="material-icons prefix">smartphone</i>
-                <input id="number" type="number" class="validate" name="Number">
-                <label for="number">Mobile</label>
+                <button class="btn waves-effect waves-light red float-right" type="submit">Submit
+                  <i class="material-icons right">send</i>
+                </button>
               </div>
             </div>
 
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">email</i>
-                <input id="email" type="email" class="validate" name="Email">
-                <label for="email">Email</label>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">mode_edit</i>
-                <textarea id="message" class="materialize-textarea" name="Message"></textarea>
-                <label for="message">Message</label>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s12">
-                  <button class="btn waves-effect waves-light red float-right" type="submit">Submit
-                    <i class="material-icons right">send</i>
-                  </button>
-                </div>
-              </div>
-
-          </form>
-
-        </div>
-
-        <!-- google maps -->
-        <div class="row">
-          <div id="map"></div>
-        </div>
+        </form>
 
       </div>
 
