@@ -55,6 +55,31 @@ contactButton.addEventListener("click", () => {
   contactSection.scrollIntoView({ behavior: 'smooth' });
 })
 
+//Mobile Links
+let homeButtonMobile = document.getElementById("homeButtonMobile");
+let classesButtonMobile = document.getElementById("classesButtonMobile");
+let aboutButtonMobile = document.getElementById("aboutButtonMobile");
+let contactButtonMobile = document.getElementById("contactButtonMobile");
+let closeButtonMobile = document.getElementById("closeButtonMobile");
+
+homeButtonMobile.addEventListener("click", () => {
+  closeButtonMobile.click();
+  homeSection.scrollIntoView({ behavior: 'smooth' });
+})
+classesButtonMobile.addEventListener("click", () => {
+  closeButtonMobile.click();
+  classesSection.scrollIntoView({ behavior: 'smooth' });
+})
+aboutButtonMobile.addEventListener("click", () => {
+  closeButtonMobile.click();
+  aboutSection.scrollIntoView({ behavior: 'smooth' });
+})
+contactButtonMobile.addEventListener("click", () => {
+  closeButtonMobile.click();
+  contactSection.scrollIntoView({ behavior: 'smooth' });
+})
+
+
 //Scroll up button
 let scrollButton = document.getElementById("scrollButton");
 
@@ -72,10 +97,3 @@ scrollButton.addEventListener("click", () => {
   homeSection.scrollIntoView({ behavior: 'smooth' });
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, {
-    indicators: false,
-    padding: 200,
-  });
-});

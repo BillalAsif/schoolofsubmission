@@ -215,11 +215,24 @@ html {
 }
 
 .about-wrapper {
-    background-color:black;
+    background-color: black;
     color: white;
     text-align: justify;
     padding: 20px;
     opacity: 0.8;
+}
+
+#mobile-demo > li > a {
+    cursor: pointer;
+}
+
+
+@media  screen and (min-width: 1200px) {
+    .bjj-about {
+
+        padding-top: 60px;
+
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -269,10 +282,11 @@ html {
         left: 0px;
     }
 
-    .quote-div>span  {
+    .quote-div>span {
         font-size: 20px;
     }
-    .quote-div>span>i  {
+
+    .quote-div>span>i {
         font-size: 20px;
     }
 
