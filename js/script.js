@@ -43,22 +43,22 @@ let contactButton = document.getElementById("contactButton");
 let contactSection = document.getElementById("contactSection");
 
 homeButton.addEventListener("click", () => {
-  homeSection.scrollIntoView();
+  homeSection.scrollIntoView({ behavior: 'smooth' });
 })
 classesButton.addEventListener("click", () => {
-  classesSection.scrollIntoView();
+  classesSection.scrollIntoView({ behavior: 'smooth' });
 })
 aboutButton.addEventListener("click", () => {
-  aboutSection.scrollIntoView();
+  aboutSection.scrollIntoView({ behavior: 'smooth' });
 })
 contactButton.addEventListener("click", () => {
-  contactSection.scrollIntoView();
+  contactSection.scrollIntoView({ behavior: 'smooth' });
 })
 
 //Scroll up button
 let scrollButton = document.getElementById("scrollButton");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -69,5 +69,5 @@ function scrollFunction() {
 }
 
 scrollButton.addEventListener("click", () => {
-  homeSection.scrollIntoView();
+  homeSection.scrollIntoView({ behavior: 'smooth' });
 })
