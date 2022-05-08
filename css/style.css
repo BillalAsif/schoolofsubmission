@@ -214,6 +214,14 @@ html {
     display: none;
 }
 
+.about-wrapper {
+    background-color:black;
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    opacity: 0.8;
+}
+
 @media screen and (max-width:991px) {
 
     .quote-div>span,
@@ -223,6 +231,11 @@ html {
 
     .bjj-logo {
         width: 150px;
+    }
+
+    .bjj-footer {
+
+        text-align: center;
     }
 
 }
@@ -252,10 +265,24 @@ html {
 @media screen and (max-height:1000px) {
 
     .quote-div {
+        top: 250px;
+        left: 0px;
+    }
 
+    .quote-div>span  {
+        font-size: 20px;
+    }
+    .quote-div>span>i  {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-height:1000px) {
+
+    .quote-div {
         top: 300px;
         left: 0px;
-
     }
 
 
