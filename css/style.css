@@ -222,12 +222,34 @@ html {
     opacity: 0.8;
 }
 
-#mobile-demo > li > a {
+#mobile-demo>li>a {
     cursor: pointer;
 }
 
+.height-auto {
+    height: auto !important;
+}
 
-@media  screen and (min-width: 1200px) {
+.bjj-carousel {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.owl-carousel .owl-item img {
+    border: solid 5px black;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.class-times {
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
     .bjj-about {
 
         padding-top: 60px;
