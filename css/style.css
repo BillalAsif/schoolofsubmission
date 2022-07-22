@@ -222,6 +222,15 @@ html {
     opacity: 0.8;
 }
 
+.lineage {
+    text-align: center;
+    padding: 50px 50px 0px 50px;
+}
+
+.lineage>img {
+    width: 100%;
+}
+
 #mobile-demo>li>a {
     cursor: pointer;
 }
